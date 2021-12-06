@@ -1,5 +1,5 @@
 import { inputSearch,filterItems, filterDirector, filterProducer, filterClima, filterTerreno, filterGenero, filterEspecie, filterVehiculo ,filterAge, sortOrdenAlfabeticoAsc, sortOrdenAlfabeticoDesc, sortOrdenNumericoAscScore, sortOrdenNumericoDescScore ,sortOrdenNumericoAscAñoLanz, sortOrdenNumericoDescAñoLanz} from '../src/docs/data.js';
-import  data from '../src/data/ghibli/ghibli.js';
+import  data from '../ghibli/ghibli.js';
 
 describe('filterItems', () => {
   it('is a function', () => {

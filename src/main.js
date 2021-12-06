@@ -1,4 +1,4 @@
-import data from './data/ghibli/ghibli.js';
+import data from './src/data/ghibli/ghibli.js';
 import {filterItems, sortOrdenNumericoAscScore, sortOrdenNumericoDescScore, sortOrdenNumericoAscAñoLanz, sortOrdenNumericoDescAñoLanz, filterDirector, filterProducer, filterAge, inputSearch, sortOrdenAlfabeticoAsc, sortOrdenAlfabeticoDesc, filterClima, filterTerreno, filterGenero, filterEspecie, filterVehiculo} from  './docs/data.js';
 
 let films = [];
