@@ -165,7 +165,7 @@ const filterButtonsProducer = btnContainerProducer.querySelectorAll(".filterProd
 //Funcion para filtrar por directores
 filterButtonsDirector.forEach((el) => {  
   el.addEventListener("click",function(e) {
-    const property= e.currentTarget.dataset.id;
+    const property= e.target.dataset.id;
     let newData= filterDirector(films,property)
         conteinerScrollFilmo.innerHTML=" ";
         return filmoItems(newData)    
@@ -176,7 +176,7 @@ filterButtonsDirector.forEach((el) => {
 //Funcion para filtrar por productores
 filterButtonsProducer.forEach((el) => {  
   el.addEventListener("click",function(e) {
-    const property= e.currentTarget.dataset.id;
+    const property= e.target.dataset.id;
     let newData= filterProducer(films,property)
           conteinerScrollFilmo.innerHTML=" ";
           return filmoItems(newData)    
