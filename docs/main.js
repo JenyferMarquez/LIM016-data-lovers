@@ -128,7 +128,7 @@ conteinerScrollLocations.appendChild(createElement);
 return template2;
 });
   }
-locationItems(filterItems("locations", films).flat(2))
+locationItems( ("locations", films).flat(2))
 
 
 function vehicleItems (callback) {

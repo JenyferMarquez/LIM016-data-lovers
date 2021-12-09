@@ -1,5 +1,5 @@
-import { inputSearch,filterItems, filterDirector, filterProducer, filterClima, filterTerreno, filterGenero, filterEspecie, filterVehiculo ,filterAge, sortOrdenAlfabeticoAsc, sortOrdenAlfabeticoDesc, sortOrdenNumericoAscScore, sortOrdenNumericoDescScore ,sortOrdenNumericoAscAñoLanz, sortOrdenNumericoDescAñoLanz} from '../src/data.js';
-import  data from '../src/data/ghibli/ghibli.js';
+import { inputSearch,filterItems, filterDirector, filterProducer, filterClima, filterTerreno, filterGenero, filterEspecie, filterVehiculo ,filterAge, sortOrdenAlfabeticoAsc, sortOrdenAlfabeticoDesc, sortOrdenNumericoAscScore, sortOrdenNumericoDescScore ,sortOrdenNumericoAscAñoLanz, sortOrdenNumericoDescAñoLanz} from '../docs/data.js';
+import  data from '../docs/data/ghibli/ghibli.js';
 
 describe('filterItems', () => {
   it('is a function', () => {
@@ -7,7 +7,7 @@ describe('filterItems', () => {
   });
 
   it('returns el array  que contiene todos los elementos de la seccion vehicles`', () => {
-    const result= filterItems('property',array)
+    const result= filterItems('vehicles',array)
     expect(result.length).toEqual(20);
   }); 
   
