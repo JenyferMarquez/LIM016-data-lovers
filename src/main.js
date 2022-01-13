@@ -126,6 +126,7 @@ callback.forEach((el) => {
 createElement.innerHTML= template2;
 conteinerScrollLocations.appendChild(createElement);
 return template2;
+
 });
   }
 locationItems(filterItems("locations", films).flat(2))
@@ -165,7 +166,7 @@ const filterButtonsProducer = btnContainerProducer.querySelectorAll(".filterProd
 //Funcion para filtrar por directores
 filterButtonsDirector.forEach((el) => {  
   el.addEventListener("click",function(e) {
-    const property= e.currentTarget.dataset.id;
+    const property= e.target.dataset.id;
     let newData= filterDirector(films,property)
         conteinerScrollFilmo.innerHTML=" ";
         return filmoItems(newData)    
@@ -176,7 +177,7 @@ filterButtonsDirector.forEach((el) => {
 //Funcion para filtrar por productores
 filterButtonsProducer.forEach((el) => {  
   el.addEventListener("click",function(e) {
-    const property= e.currentTarget.dataset.id;
+    const property= e.target.dataset.id;
     let newData= filterProducer(films,property)
           conteinerScrollFilmo.innerHTML=" ";
           return filmoItems(newData)    
@@ -256,7 +257,7 @@ const filterButtonDesc =document.getElementById("desc");
 
   filterButtonsClima.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterClima(films,property)
       conteinerScrollLocations.innerHTML=" ";
         return locationItems(newData)    
@@ -269,7 +270,7 @@ const filterButtonDesc =document.getElementById("desc");
 
   filterButtonsTerreno.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterTerreno(films,property)
        conteinerScrollLocations.innerHTML=" ";
         return locationItems(newData)    
@@ -291,7 +292,7 @@ const filterButtonsGenero = btnContainerGenero.querySelectorAll(".filterGenero")
 
   filterButtonsGenero.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterGenero(films,property)
       conteinerScrollPeople.innerHTML=" ";
         return peopleItems (newData)    
@@ -304,7 +305,7 @@ const filterButtonsHumano = btnContainerHumanos.querySelectorAll(".filterHumano"
 
 filterButtonsHumano.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterEspecie(films,property)
       conteinerScrollPeople.innerHTML=" ";
         return peopleItems (newData)    
@@ -317,7 +318,7 @@ const filterButtonsAnimal = btnContainerAnimales.querySelectorAll(".filterAnimal
 
 filterButtonsAnimal.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterEspecie(films,property)
       conteinerScrollPeople.innerHTML=" ";
         return peopleItems (newData)    
@@ -330,7 +331,7 @@ const filterButtonsHibrido = btnContainerHibridos.querySelectorAll(".filterHibri
 
 filterButtonsHibrido.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterEspecie(films,property)
       conteinerScrollPeople.innerHTML=" ";
         return peopleItems (newData)    
@@ -343,7 +344,7 @@ const filterButtonsMiticos = btnContainerMiticos.querySelectorAll(".filterMitico
 
 filterButtonsMiticos.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterEspecie(films,property)
       conteinerScrollPeople.innerHTML=" ";
         return peopleItems (newData)    
@@ -388,7 +389,7 @@ document.getElementById("cleanPeople").addEventListener("click",function() {
 
   filterButtonsAereo.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterVehiculo(films,property)
       conteinerScrollVehicles.innerHTML=" ";
         return vehicleItems (newData)    
@@ -401,7 +402,7 @@ document.getElementById("cleanPeople").addEventListener("click",function() {
 
   filterButtonsMaritimo.forEach((el) => {  
     el.addEventListener("click",function(e) {
-      const property= e.currentTarget.dataset.id;
+      const property= e.target.dataset.id;
       let newData= filterVehiculo(films,property)
       conteinerScrollVehicles.innerHTML=" ";
         return vehicleItems (newData)    
